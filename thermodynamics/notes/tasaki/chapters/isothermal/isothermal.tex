@@ -1,0 +1,58 @@
+\section{Isothermal Operation}
+温度一定の環境（ひとつの熱浴）下で、ある平衡状態$\TXone$から別の平衡状態$\TXtwo$へと変化させるこの操作を\bm{等温操作}という。
+記号として、$\TXone\iso\TXtwo$と書く。
+
+特に、操作の途中で常に平衡状態にあるとみなせるような極限的な操作を一般に\bm{準静的}といい、準静的な等温操作を等温準静操作といい、$\TXone\iq\TXtwo$と書く。
+この操作の全く逆の操作$\TXtwo\iq\TXone$を考えることができる。
+まとめて、$\TXone\iqrv\TXtwo$とかく。
+
+\subsection*{要請3.1 Kelvinの原理}
+任意の温度で任意の等温サイクルで系が外界にする仕事$\Wcyc$は正ではない。
+\begin{align}\label{iso:kelvin}
+  \Wcyc \leq 0
+\end{align}
+第二種永久機関が存在しないことを原理としておいておく。
+
+\subsection*{結果3.2 等温純正サイクルがする仕事}
+等温準静サイクルが外界にする仕事は0である。
+
+\paragraph*{証明}
+$\TXone\iq\TXtwo\iq\TXone$という過程を考える。Kelvinの原理よりこの過程が外界にする仕事$\Wcyc$は$\Wcyc\leq0$である。
+一方で、全く逆の過程を考えたとき、外界にする仕事は$-\Wcyc$でありこれもKelvinの原理より、$-\Wcyc\leq0$である。
+以上より、$\Wcyc=0$である。
+
+\subsection*{結果3.3 最大仕事の原理}
+最大仕事$\Wmax(\TXone\iso\TXtwo)$は任意の等温準静過程$\TXone\iq\TXtwo$の間に系が外界に行う仕事に等しい。
+
+\paragraph*{証明}
+$\TXone\iq\TXtwo\iso\TXone$という過程を考える。Kelvinの原理よりこのサイクルが外界にする仕事$\Wcyc$は$\Wcyc\leq0$である。
+また、
+\begin{align*}
+  \Wcyc&=W(\TXone\iq\TXtwo) + W(\TXtwo\iso\TXone) \\
+  &= -W(\TXtwo\iq\TXone) + W(\TXtwo\iso\TXone) \leq 0 \\
+  &\therefore W(\TXtwo\iso\TXone) \leq W(\TXtwo\iq\TXone)
+\end{align*}
+より示された。
+但し途中で、$\TXone\iqrv\TXtwo$であることをもちいた。
+
+
+\section{Helmholtzの自由エネルギー}
+ある任意の温度$T$と、示量変数の組の基準$X_0$を決めたとき何らかの操作で到達できる$X$についてHelmholtzの自由エネルギー$F(T, X)$を
+\begin{align}\label{helmholtz-def}
+  F(T, X) = \Wmax(\TX\iso\TXzero)
+\end{align}
+と定義する。
+
+$\TXone\iq\TXtwo$という過程を考えたとき、系が外界にする仕事$W$は
+\begin{align*}
+  W &= \Wmax(\TXone\iq\TXtwo) \\
+  &= W(\TXone\iq\TXzero) + W(\TXzero\iq\TXtwo) \\
+  &= \Wmax(\TXone\iso\TXzero) - \Wmax(\TXtwo\iso\TXzero) \\
+  &= F(T, X_1) - F(T, X_2)
+\end{align*}
+とかけるわけである。
+
+Helmholtzの自由エネルギーを用いて$\FTVN$と書いたとき、\\
+$\displaystyle \pTVN=-\pdv{V}\FTVN$\\
+$\displaystyle \muTVN=\pdv{N}\FTVN$\\
+と定義する。

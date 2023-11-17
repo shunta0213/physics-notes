@@ -12,6 +12,29 @@
 \usepackage{longtable}
 \usepackage[unicode,hidelinks,pdfusetitle]{hyperref}
 \usepackage{nccmath}
+\usepackage{physics}
+
+\newcommand{\TX}{(T,X)}
+\newcommand{\TXzero}{(T,X_{0})}
+\newcommand{\TXone}{(T, X_1)}
+\newcommand{\TXtwo}{(T, X_2)}
+\newcommand{\ToneXone}{(T_1, X_1)}
+\newcommand{\TtwoXtwo}{(T_1, X_1)}
+
+\newcommand{\iso}{\xrightarrow{i}}
+\newcommand{\iq}{\xrightarrow{iq}}
+\newcommand{\iqrv}{\overset{iq}{\longleftrightarrow}}
+\newcommand{\Wcyc}{W_{cyc}}
+\newcommand{\Wmax}{W_{max}}
+
+\newcommand{\FX}{F(T, X)}
+\newcommand{\FTVN}{F(T, V, N)}
+
+\newcommand{\pX}{p(T, X)}
+\newcommand{\pTVN}{p(T, V, N)}
+
+\newcommand{\muX}{\mu(T, X)}
+\newcommand{\muTVN}{\mu(T, V, N)}
 
 \begin{document}
 
@@ -37,5 +60,8 @@
 \input{chapters/equilibrium/instruction.tex}
 \section{等温環境での平衡状態}
 \input{chapters/equilibrium/equilibrium.tex}
+
+\chapter{等温操作(Isothermal Operation)とHelmholtzの自由エネルギー(Helmholtz free energy)}
+\input{chapters/isothermal/isothermal.tex}
 
 \end{document}
